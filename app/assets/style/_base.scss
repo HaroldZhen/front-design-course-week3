@@ -1,0 +1,29 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+ul,li,p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Roboto', 'Noto Sans', sans-serif;
+  line-height: 1.5;
+}
+h1,.h1 {
+  font-size: 4rem;
+}
+h2,.h2 {
+  font-size: 3rem;
+}
+h3,.h3 {
+  font-size: 2.25rem;
+}

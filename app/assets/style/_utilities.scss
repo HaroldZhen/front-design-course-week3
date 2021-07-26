@@ -1,0 +1,34 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@include md{
+  .container {
+    max-width: 720px;
+  }
+}
+@include sm{
+  .container {
+    max-width: 375px;
+  }
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.material-icons, .material-icons-outlined {
+  &.md-18 { 
+    font-size: 18px; 
+  }
+  &.md-36 { 
+    font-size: 36px; 
+  }
+  &.md-40 { 
+    font-size: 40px; 
+  }
+  &.md-48 { 
+    font-size: 48px; 
+  }
+}

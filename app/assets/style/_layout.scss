@@ -1,0 +1,199 @@
+.header {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 88px;
+  .logo {
+    display: block;
+    width: 80px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    li + li {
+      margin-left: 3rem;
+    }
+    .menu-link {
+      font-size: 1.25rem;
+      display: block;
+      color: $white;
+    }
+  }
+}
+
+@include lg {
+  .header {
+    padding-left: 39px;
+    padding-right: 39px;
+    .menu {
+      li + li {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+}
+
+@include md {
+  .header {
+    flex-direction: column;
+    padding: 0;
+    .logo {
+      width: 48px;
+      margin: 10px 0;
+    }
+    .menu {
+      width: 100%;
+      li + li {
+        margin-left: 0rem;
+      }
+      li {
+        border: 1px solid $white;
+        width: 50%;
+      }
+      .menu-link {
+        text-align: center;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.main {
+  height: calc(100vh - 109px - 246px);
+}
+
+.footer {
+  background-color: $primary;
+  padding-top: 44px;
+  padding-bottom: 39px;
+  &,
+  a {
+    color: $white;
+  }
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .menu {
+    display: flex;
+    margin-bottom: 36px;
+    .menu-item + .menu-item {
+      margin-left: 3rem;
+    }
+    .menu-link {
+      font-size: 16px;
+    }
+  }
+  .contact {
+    .contact-link {
+      display: flex;
+      align-items: center;
+      font-size: 2.25rem;
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    .social-link {
+      display: block;
+      width: 48px;
+      height: 48px;
+    }
+    .social-item + .social-item {
+      margin-left: 2rem;
+    }
+  }
+
+  .icon-fb {
+    background-image: url("../images/icon-fb.svg");
+    @include icon;
+  }
+  .icon-ig {
+    background-image: url("../images/icon-ig.svg");
+    @include icon;
+  }
+  .icon-line {
+    background-image: url("../images/icon-line.svg");
+    @include icon;
+  }
+
+  .copyright {
+    padding-top: 2rem;
+    border-top: 1px solid $white;
+    display: flex;
+    justify-content: space-between;
+    .policy-link + .policy-link {
+      margin-left: 3rem;
+    }
+  }
+}
+
+@include lg {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 21px;
+    .social {
+      .social-link {
+        width: 24px;
+        height: 24px;
+      }
+      .social-item + .social-item {
+        margin-left: 1.5rem;
+      }
+    }
+    .menu{
+      margin-top: 6px;
+      margin-bottom: 18px;
+    }
+    .footer-wrap {
+      margin-bottom: 1.25rem;
+    }
+    .contact {
+      .contact-link {
+        font-size: 1.25rem;
+        span {
+          margin-right: 0.5rem;
+        }
+      }
+      li + li {
+        margin-top: 12px;
+      }
+    }
+    .copyright {
+      padding-top: 1.5rem;
+      .policy{
+        margin-top: 12px;
+        .policy-link + .policy-link {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    .menu{
+      display: none;
+    }
+    .copyright {
+      padding-top: 1rem;
+      flex-direction: column;
+      .policy{
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        .policy-link + .policy-link {
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
