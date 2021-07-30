@@ -11,52 +11,55 @@
 </head>
 
 <body>
-  <header class="header">
-    <a class="logo" href="./index.html"><img class="img-fluid" src="./assets/images/logo.png" alt="logo"></a>
-    <ul class="menu">
-      <li><a class="menu-link" href="./product.html">系列鏡框</a></li>
-      <li><a class="menu-link" href="./location.html">門市據點</a></li>
-      <li><a class="menu-link" href="./blog.html">部落格</a></li>
-      <li><a class="menu-link" href="./faq.html">常見問題</a></li>
-    </ul>
+  <header class="header bg-primary">
+    <a class="header__logo" href="./index.html"><img class="img-fluid" src="./assets/images/logo.png" alt="logo"></a>
+    <nav class="header__nav">
+      <ul class="menu">
+        <li class="menu__item border-sm"><a class="menu__link header__link-white" href="./product.html">系列鏡框</a></li>
+        <li class="menu__item border-sm"><a class="menu__link header__link-white" href="./location.html">門市據點</a></li>
+        <li class="menu__item border-sm"><a class="menu__link header__link-white" href="./blog.html">部落格</a></li>
+        <li class="menu__item border-sm"><a class="menu__link header__link-white" href="./faq.html">常見問題</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="main">
+  <main>
     <%- contents %>
   </main>
+  
   <footer class="footer">
     <div class="container">
       <div class="footer-wrap">
         <div>
-          <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="">首頁</a></li>
-            <li class="menu-item"><a class="menu-link" href="">系列鏡框</a></li>
-            <li class="menu-item"><a class="menu-link" href="">門市據點</a></li>
-            <li class="menu-item"><a class="menu-link" href="">部落格</a></li>
-            <li class="menu-item"><a class="menu-link" href="">常見問題</a></li>
+          <ul class="footerMenu">
+            <li class="footerMenu-item"><a class="footerMenu-link" href="">首頁</a></li>
+            <li class="footerMenu-item"><a class="footerMenu-link" href="">系列鏡框</a></li>
+            <li class="footerMenu-item"><a class="footerMenu-link" href="">門市據點</a></li>
+            <li class="footerMenu-item"><a class="footerMenu-link" href="">部落格</a></li>
+            <li class="footerMenu-item"><a class="footerMenu-link" href="">常見問題</a></li>
           </ul>
           <ul class="contact">
-            <li><a href="#" class="contact-link"><span class="material-icons-outlined md-36">
+            <li><a href="#" class="contact-link"><span class="material-icons-outlined lg-36 md-24 sm-18">
               call
               </span>
               0800-000-000</a></li>
-            <li><a href="#" class="contact-link"><span class="material-icons-outlined md-36">
+            <li><a href="#" class="contact-link"><span class="material-icons-outlined lg-36 md-24 sm-18">
               email
               </span>glasses@business.com</a></li>
           </ul>
         </div>
         <div>
           <ul class="social">
-            <li class="social-item"><a class="social-link icon-fb"href="#"></a></li>
-            <li class="social-item"><a class="social-link icon-ig" href="#"></a></li>
-            <li class="social-item"><a class="social-link icon-line" href="#"></a></li>
+            <li class="social-item"><a class="social-link bg-fb" href="#"></a></li>
+            <li class="social-item"><a class="social-link bg-ig" href="#"></a></li>
+            <li class="social-item"><a class="social-link bg-line" href="#"></a></li>
           </ul>
         </div>
       </div>
       <div class="copyright">
         <p>Copyright © 2020 Glasses.All rights reserved.</p>
-        <div class="policy">
-          <a href="#" class="policy-link">隱私權政策</a>
-          <a href="#" class="policy-link">服務條款</a>
+        <div class="term">
+          <a href="#" class="term-link">隱私權政策</a>
+          <a href="#" class="term-link">服務條款</a>
         </div>
       </div>
     </div>

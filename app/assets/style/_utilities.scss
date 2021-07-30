@@ -1,34 +1,115 @@
+.bg-primary {
+  background-color: $primary;
+}
+.text-white {
+  color: $white !important;
+}
+.text-primary {
+  color: $primary !important;
+}
+.text-secondary {
+  color: $secondary !important;
+}
+.text-black {
+  color: $black !important;
+}
+.fz-100 {
+  font-size: 100px;
+}
+.font_italic {
+  font-style: italic !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.bg_center-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-}
-@include md{
-  .container {
+  @include md {
     max-width: 720px;
   }
-}
-@include sm{
-  .container {
+  @include sm {
     max-width: 375px;
   }
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
-.material-icons, .material-icons-outlined {
-  &.md-18 { 
-    font-size: 18px; 
-  }
-  &.md-36 { 
-    font-size: 36px; 
-  }
-  &.md-40 { 
-    font-size: 40px; 
-  }
-  &.md-48 { 
-    font-size: 48px; 
+.border-sm {
+  @include sm {
+    border: 1px solid $white;
   }
 }
+
+.d-block {
+  display: block;
+}
+
+.material-icons,
+.material-icons-outlined {
+  @each $value in $material-icons-size {
+    &.#{$value}-18 {
+      font-size: 18px;
+    }
+    &.#{$value}-24 {
+      font-size: 24px;
+    }
+    &.#{$value}-36 {
+      font-size: 36px;
+    }
+    &.#{$value}-40 {
+      font-size: 40px;
+    }
+    &.#{$value}-48 {
+      font-size: 48px;
+    }
+  }
+}
+
+@each $item, $value in $icons {
+  .bg-#{$item} {
+    @include icon("#{$value}");
+  }
+}
+
+@each $item, $value in $spacers {
+  .m-#{$item} {
+    margin: $value;
+  }
+  .my-#{$item} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .mx-#{$item} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .mt-#{$item} {
+    margin-top: $value;
+  }
+  .mb-#{$item} {
+    margin-bottom: $value;
+  }
+  .ms-#{$item} {
+    margin-left: $value;
+  }
+  .me-#{$item} {
+    margin-right: $value;
+  }
+}
+
+// @for $i from 1 through $grid-columns {
+//   .col-#{$i} {
+//     width: (100% / $grid-columns);
+//   }
+// }

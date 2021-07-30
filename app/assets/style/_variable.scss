@@ -1,11 +1,38 @@
-$primary: #AA0601;
-$secondary: #FBF2F2;
+$primary: #aa0601;
+$secondary: #650300;
+$light: #fbf2f2;
 $black: #000;
 $white: #fff;
 
 // $gutter: 15px;
-// $breakpoints: (
-//   sm: 375px,
-//   md: 768px,
-//   lg: 1110px,
-// );
+$breakpoints: (
+  sm: 375px,
+  md: 768px,
+  lg: 1200px,
+);
+$gutter-width: 30px;
+
+$grid-columns: 12;
+$grid-gutter-width: 15px;
+
+$material-icons-size: ("sm", "md", "lg");
+
+$icons: (
+  fb: "icon-fb.svg",
+  ig: "icon-ig.svg",
+  line: "icon-line.svg",
+);
+
+$spacer: 16px;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 3.5,
+  9: $spacer * 4,
+);

@@ -1,5 +1,5 @@
 @mixin lg {
-  @media (max-width: 1200px) {
+  @media (min-width: 769px) {
     @content;
   }
 }
@@ -13,7 +13,9 @@
     @content;
   }
 }
-@mixin icon {
+
+@mixin icon($iconName) {
+  background-image: url("../images/#{$iconName}");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
