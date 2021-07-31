@@ -1,6 +1,4 @@
 .product {
-  padding-top: 2.5rem;
-  padding-bottom: 10rem;
   &__bg1 {
     background-image: url("../images/banner-1.png");
     @include md {
@@ -11,6 +9,25 @@
     background-image: url("../images/banner-2.png");
     @include md {
       background-image: url("../images/banner-2-md.png");
+    }
+  }
+  &__bg3 {
+    background-image: url("../images/banner-3.png");
+    @include md {
+      background-image: url("../images/banner-3-md.png");
+    }
+  }
+  &__bg4 {
+    background-image: url("../images/banner-4.png");
+    @include md {
+      background-image: url("../images/banner-4-md.png");
+    }
+  }
+  &__img{
+    height: 164px;
+    object-fit: cover;
+    @include sm {
+      height: 166px;
     }
   }
 }

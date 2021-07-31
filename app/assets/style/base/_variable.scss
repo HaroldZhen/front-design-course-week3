@@ -7,7 +7,9 @@ $gray: #707070;
 $gray100: #dee2e6;
 $gray200: #DCDCDC;
 $gray300: #F2F2F2;
+$gray400: #CED4DA;
 $gray500: #555555;
+
 
 // $gutter: 15px;
 $breakpoints: (
@@ -22,6 +24,7 @@ $material-icons-size: ("sm", "md", "lg");
 
 $spacer: 1rem;
 $spacers: (
+  'n3d5': $spacer * -1.25,
   'n2': $spacer * -0.5,
   'n1': $spacer * -0.25,
   0: 0,
@@ -36,7 +39,9 @@ $spacers: (
   9: $spacer * 4,
   10: $spacer * 4.5,
   11: $spacer * 5,
+  '1d5': $spacer * 0.75,
   '3d5': $spacer * 1.25,
+  '7d5': $spacer * 3.75,
   'xl': $spacer * 6,
   'xxl': $spacer * 6.5,
   'xxxl': $spacer * 10,
