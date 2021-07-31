@@ -1,0 +1,35 @@
+.product {
+  padding-top: 2.5rem;
+  padding-bottom: 10rem;
+  &__bg1 {
+    background-image: url("../images/banner-1.png");
+    @include md {
+      background-image: url("../images/banner-1-md.png");
+    }
+  }
+  &__bg2 {
+    background-image: url("../images/banner-2.png");
+    @include md {
+      background-image: url("../images/banner-2-md.png");
+    }
+  }
+}
+
+.colors {
+  &__list {
+    display: flex;
+  }
+  &__box {
+    width: 24px;
+    height: 24px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__red {
+    background-color: $primary;
+  }
+  &__black {
+    background-color: $black;
+  }
+}
