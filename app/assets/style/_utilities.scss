@@ -741,8 +741,8 @@
   color: $white;
   background-color: $primary;
   border-width: 0;
-  transition: background-color 1s linear;
+  transition: background-color 0.3s linear;
   &:hover {
-    background-color: darken($primary, 5);
+    background-color: darken($primary, 7);
   }
 }

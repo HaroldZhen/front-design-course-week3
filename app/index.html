@@ -85,7 +85,7 @@ engine: ejs
             <div class="series__image series__img1 bg-center-cover"></div>
           </div>
           <div
-            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-start align-items-center text-primary font-bold font-italic py-sm-7"
+            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-start justify-sm-center align-items-center text-primary font-bold font-italic py-sm-7"
           >
             <span class="material-icons-outlined text-reset me-2">
               auto_awesome
@@ -102,7 +102,7 @@ engine: ejs
             <div class="series__image series__img2 bg-center-cover"></div>
           </div>
           <div
-            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-end justify-md-start align-items-center text-primary font-bold font-italic py-sm-7"
+            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-end justify-sm-center justify-md-start align-items-center text-primary font-bold font-italic py-sm-7"
           >
             <span class="material-icons-outlined text-reset me-2">
               light_mode
@@ -117,7 +117,7 @@ engine: ejs
             <div class="series__image series__img3 bg-center-cover"></div>
           </div>
           <div
-            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-start align-items-center text-primary font-bold font-italic py-sm-7"
+            class="col-5 col-sm-12 font-size-9 font-size-md-5 d-flex justify-start justify-sm-center align-items-center text-primary font-bold font-italic py-sm-7"
           >
             <span class="material-icons-outlined text-reset me-2">
               flash_on
@@ -243,31 +243,33 @@ engine: ejs
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
           <div class="d-flex flex-column mb-3 mb-md-2">
-            <label class="d-block" for="">姓名</label>
-            <input class="contactUs__input" type="text" placeholder="陳小明" />
+            <label class="d-block" for="name">姓名</label>
+            <input class="contactUs__input" id="name" type="text" placeholder="陳小明" />
           </div>
           <div class="d-flex flex-column mb-3 mb-md-2">
-            <label class="d-block" for="">聯絡電話</label>
+            <label class="d-block" for="tel">聯絡電話</label>
             <input
               class="contactUs__input"
               type="text"
               placeholder="0912-123123"
+              id="tel"
             />
           </div>
           <div class="d-flex flex-column mb-3 mb-md-2">
-            <label class="d-block" for="">電子郵件</label>
+            <label class="d-block" for="email">電子郵件</label>
             <input
               class="contactUs__input"
               type="text"
               placeholder="example@email.com"
+              id="email"
             />
           </div>
           <div class="d-flex flex-column mb-3 mb-md-2">
-            <label class="d-block" for="">意見反應</label>
+            <label class="d-block" for="comment">意見反應</label>
             <textarea
               class="contactUs__input"
               name=""
-              id=""
+              id="comment"
               cols="30"
               rows="10"
               placeholder="請輸入你的意見"
@@ -278,8 +280,9 @@ engine: ejs
               type="checkbox"
               name="policy"
               value="Bike"
+              id="term"
             />
-            <label for=""
+            <label for="term"
               >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
             >
           </div>

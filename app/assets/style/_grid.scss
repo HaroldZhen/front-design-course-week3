@@ -5,9 +5,14 @@
   margin-right: -($gutter-width / 2);
 }
 
-.col-0{
+.col-0 {
   padding-left: 0;
   padding-right: 0;
+}
+.col {
+  padding-left: $gutter-width/2;
+  padding-right: $gutter-width/2;
+  flex-grow: 1;
 }
 
 @for $i from 1 through $grid-columns {
@@ -15,7 +20,6 @@
     padding-left: $gutter-width/2;
     padding-right: $gutter-width/2;
     width: 100% * ($i / $grid-columns);
-    flex-grow: 1;
   }
 }
 
@@ -25,14 +29,18 @@
       padding-left: $gutter-width/2;
       padding-right: $gutter-width/2;
       width: 100% * ($i / $grid-columns);
-      flex-grow: 1;
     }
   }
 }
 @include md {
-  .col-md-0{
+  .col-md-0 {
     padding-left: 0;
     padding-right: 0;
+  }
+  .col {
+    padding-left: $gutter-width/2;
+    padding-right: $gutter-width/2;
+    flex-grow: 1;
   }
 }
 
@@ -42,14 +50,17 @@
       padding-left: $gutter-width/2;
       padding-right: $gutter-width/2;
       width: 100% * ($i / $grid-columns);
-      flex-grow: 1;
     }
   }
 }
 @include sm {
-  .col-sm-0{
+  .col-sm-0 {
     padding-left: 0;
     padding-right: 0;
   }
+  .col {
+    padding-left: $gutter-width/2;
+    padding-right: $gutter-width/2;
+    flex-grow: 1;
+  }
 }
-
