@@ -180,43 +180,59 @@ engine: ejs
         </p>
         <form class="userInfo" action="#">
           <div class="userInfo__item">
-            <label class="d-block" for="">姓名</label>
-            <input class="userInfo__input" type="text" placeholder="陳小明" />
-          </div>
-          <div class="userInfo__item">
-            <label class="d-block" for="">聯絡電話</label>
+            <label class="d-block" for="name">姓名</label>
             <input
               class="userInfo__input"
               type="text"
+              id="name"
+              name="name"
+              placeholder="陳小明"
+            />
+          </div>
+          <div class="userInfo__item">
+            <label class="d-block" for="tel">聯絡電話</label>
+            <input
+              class="userInfo__input"
+              type="text"
+              name="tel"
+              id="tel"
               placeholder="0912-123123"
             />
           </div>
           <div class="userInfo__item">
-            <label class="d-block" for="">電子郵件</label>
+            <label class="d-block" for="email">電子郵件</label>
             <input
               class="userInfo__input"
               type="text"
               placeholder="example@email.com"
+              id="email"
             />
           </div>
           <div class="userInfo__item">
-            <label class="d-block" for="">意見反應</label>
+            <label class="d-block" for="comment">意見反應</label>
             <textarea
               class="userInfo__input"
-              name=""
-              id=""
+              name="comment"
+              id="comment"
               cols="30"
               rows="10"
               placeholder="請輸入你的意見"
             ></textarea>
           </div>
           <div class="userInfo__item userInfo__item-last">
-            <input class="userInfo__checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for=""
+            <input
+              class="userInfo__checkbox"
+              type="checkbox"
+              id="term"
+              name="term"
+            />
+            <label for="term"
               >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
             >
           </div>
-          <button type="button" class="userInfo__button">確認送出</button>
+          <div>
+            <button type="button" class="userInfo__button btn">確認送出</button>
+          </div>
         </form>
       </div>
     </div>

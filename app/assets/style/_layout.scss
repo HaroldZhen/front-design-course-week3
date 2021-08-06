@@ -12,13 +12,22 @@
   }
   &__logo {
     display: block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     width: 80px;
+    height: 49px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
     @include sm {
       width: 48px;
+      height: 29px;
       margin: 10px 0;
     }
   }
-  &__nav{
+  &__nav {
     @include sm {
       width: 100%;
     }
@@ -45,7 +54,7 @@
       display: block;
     }
   }
-  .header__link-white{
+  .header__link-white {
     color: $white;
     font-size: 1.25rem;
     line-height: 1.35;
@@ -76,7 +85,8 @@
       margin-bottom: 1.25rem;
     }
   }
-  &, a {
+  &,
+  a {
     color: $white;
   }
   .footerMenu {
@@ -175,12 +185,12 @@
     }
   }
 }
-main{
-    min-height: calc(100vh - 109px - 344px);  
+main {
+  min-height: calc(100vh - 109px - 344px);
   @include md {
-    min-height: calc(100vh - 109px - 190px);  
+    min-height: calc(100vh - 109px - 190px);
   }
   @include sm {
-    min-height: calc(100vh - 146px - 233px);  
+    min-height: calc(100vh - 146px - 233px);
   }
 }
